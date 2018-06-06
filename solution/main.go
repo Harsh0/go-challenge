@@ -16,12 +16,6 @@ type Response struct {
 	Numbers []int `json:"numbers"`
 }
 
-/*HTTPResponse body and error struct */
-type HTTPResponse struct {
-	res Response
-	err error
-}
-
 var testServerURL = "localhost:8090"
 var maxResponseTime = 500 * time.Millisecond
 
